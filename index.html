@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Learning Hub - Free AI Tutorials, Machine Learning Guides & ChatGPT Resources</title>
+    <meta name="description" content="AI Learning Hub offers beginner-friendly AI tutorials, machine learning guides, ChatGPT resources, LLM explanations, and practical AI learning materials. Start your AI journey with free, expert-curated resources.">
+    <meta name="keywords" content="AI learning, artificial intelligence tutorials, machine learning guides, ChatGPT resources, large language models, LLM guide, AI for beginners, AI education, deep learning, generative AI, AI business, AI coding, AI automation">
+    <link rel="canonical" href="https://ailearninghub.com/">
+    <meta property="og:title" content="AI Learning Hub - Free AI Tutorials & Machine Learning Guides">
+    <meta property="og:description" content="Discover beginner-friendly AI tutorials, machine learning guides, ChatGPT resources, and practical AI learning materials. All 100% free.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ailearninghub.com/">
+    <meta property="og:image" content="https://ailearninghub.com/og-image.jpg">
+    <meta property="og:site_name" content="AI Learning Hub">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Learning Hub - Free AI Tutorials & Machine Learning Guides">
+    <meta name="twitter:description" content="Discover beginner-friendly AI tutorials, machine learning guides, ChatGPT resources, and practical AI learning materials. All 100% free.">
+    <meta name="twitter:image" content="https://ailearninghub.com/og-image.jpg">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AI Learning Hub">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "AI Learning Hub",
+            "url": "https://ailearninghub.com",
+            "description": "Free AI tutorials, machine learning guides, and practical AI learning resources.",
+            "sameAs": ["https://github.com/ailearninghub", "https://linkedin.com/company/ailearninghub", "https://twitter.com/ailearninghub"],
+            "contactPoint": {"@type": "ContactPoint", "email": "hello@ailearninghub.com", "contactType": "customer support"}
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "AI Learning Hub",
+            "url": "https://ailearninghub.com",
+            "potentialAction": {"@type": "SearchAction", "target": "https://ailearninghub.com/search?q={search_term_string}", "query-input": "required name=search_term_string"}
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ailearninghub.com"},
+                {"@type": "ListItem", "position": 2, "name": "AI Guides", "item": "https://ailearninghub.com/#guides"},
+                {"@type": "ListItem", "position": 3, "name": "Resources", "item": "https://ailearninghub.com/#resources"}
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": "What is artificial intelligence?", "acceptedAnswer": {"@type": "Answer", "text": "Artificial Intelligence (AI) is the simulation of human intelligence by machines, enabling them to learn, reason, and solve problems."}},
+                {"@type": "Question", "name": "How do I start learning AI as a beginner?", "acceptedAnswer": {"@type": "Answer", "text": "Start with foundational concepts like machine learning basics, Python programming, and explore free resources like AI Learning Hub's beginner guides."}},
+                {"@type": "Question", "name": "What are large language models?", "acceptedAnswer": {"@type": "Answer", "text": "Large Language Models (LLMs) are AI models trained on vast text datasets to understand and generate human-like text, powering tools like ChatGPT and Claude."}},
+                {"@type": "Question", "name": "Is AI difficult to learn?", "acceptedAnswer": {"@type": "Answer", "text": "AI has varying difficulty levels. Beginners can start with conceptual understanding, while advanced learners can dive into mathematics and programming."}},
+                {"@type": "Question", "name": "What careers are available in AI?", "acceptedAnswer": {"@type": "Answer", "text": "AI careers include machine learning engineer, data scientist, AI researcher, NLP engineer, computer vision engineer, and AI product manager."}}
+            ]
+        }
+    </script>
+    <style>
+        :root {
+            --bg: #0a0a1a;
+            --bg2: #0f0f2a;
+            --surface: #151530;
+            --surface2: #1a1a3a;
+            --primary: #4f6ef7;
+            --primary2: #6c5ce7;
+            --accent: #00d4ff;
+            --accent2: #7b5cff;
+            --text: #e8e8f0;
+            --text2: #b0b0c8;
+            --text3: #8888a8;
+            --border: rgba(255, 255, 255, 0.08);
+            --glass: rgba(20, 20, 50, 0.6);
+            --glass2: rgba(25, 25, 60, 0.7);
+            --shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+            --radius: 16px;
+            --radius2: 12px;
+            --radius3: 8px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max: 1200px;
+            --header-h: 70px;
+        }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-h);
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background: radial-gradient(ellipse at 20% 10%, rgba(79, 110, 247, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 30%, rgba(108, 92, 231, 0.1) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 60%, rgba(0, 212, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 30% 80%, rgba(123, 92, 255, 0.08) 0%, transparent 50%);
+        }
+        .container {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 26, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            height: var(--header-h);
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .logo {
+            font-size: 1.35rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--primary2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        nav a {
+            color: var(--text2);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: var(--transition);
+            white-space: nowrap;
+            letter-spacing: -0.2px;
+        }
+        nav a:hover,
+        nav a:focus-visible {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+            background: none;
+            border: none;
+            width: 40px;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+        .hero {
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .hero-content h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, #fff 0%, #c0c8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text2);
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+        .btn-group {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            letter-spacing: -0.2px;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary2));
+            color: #fff;
+            box-shadow: 0 6px 25px rgba(79, 110, 247, 0.35);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 10px 35px rgba(79, 110, 247, 0.5);
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+        }
+        .btn-outline:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateY(-2px);
+        }
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-visual svg {
+            width: 100%;
+            max-width: 520px;
+            height: auto;
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .hero-visual::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(79, 110, 247, 0.25) 0%, transparent 70%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 1;
+            }
+        }
+        .stats-section {
+            padding: 50px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius2);
+            padding: 28px 20px;
+            transition: var(--transition);
+        }
+        .stat-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+        .stat-number {
+            font-size: 2.4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent), var(--primary2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text3);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+        .section {
+            padding: 70px 0;
+        }
+        .section-title {
+            font-size: clamp(1.7rem, 3vw, 2.2rem);
+            font-weight: 800;
+            letter-spacing: -0.8px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .section-subtitle {
+            color: var(--text3);
+            text-align: center;
+            margin-bottom: 48px;
+            font-size: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-content {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px;
+            column-count: 2;
+            column-gap: 40px;
+            line-height: 1.8;
+            color: var(--text2);
+            font-size: 0.95rem;
+        }
+        .about-content h3 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin: 20px 0 8px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            break-inside: avoid;
+        }
+        .about-content h3:first-child {
+            margin-top: 0;
+        }
+        .about-content p {
+            margin-bottom: 14px;
+            break-inside: avoid;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 18px;
+        }
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius2);
+            padding: 28px 24px;
+            transition: var(--transition);
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .card:hover::before {
+            opacity: 1;
+        }
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.18);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            background: rgba(79, 110, 247, 0.15);
+        }
+        .card-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 1.8;
+        }
+        .card h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+        .card p {
+            font-size: 0.88rem;
+            color: var(--text3);
+            line-height: 1.5;
+        }
+        .search-bar {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .search-bar input {
+            flex: 1;
+            min-width: 220px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            background: var(--glass);
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .search-bar input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(79, 110, 247, 0.1);
+        }
+        .search-bar input::placeholder {
+            color: var(--text3);
+        }
+        .resource-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius2);
+            padding: 24px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .resource-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        .resource-card h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        .resource-card p {
+            font-size: 0.85rem;
+            color: var(--text3);
+            flex: 1;
+        }
+        .resource-card .btn {
+            align-self: flex-start;
+            font-size: 0.82rem;
+            padding: 10px 20px;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        .no-results {
+            text-align: center;
+            color: var(--text3);
+            padding: 40px;
+            grid-column: 1/-1;
+            font-size: 1rem;
+        }
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--primary), var(--accent), var(--primary2));
+            border-radius: 3px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.6s ease forwards;
+        }
+        .timeline-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        .timeline-item:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+        .timeline-item:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+        .timeline-item:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 14px;
+            height: 14px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 16px rgba(0, 212, 255, 0.5);
+            z-index: 2;
+        }
+        .timeline-item h4 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: -0.3px;
+        }
+        .timeline-item p {
+            color: var(--text3);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius2);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-item.active {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .faq-question {
+            padding: 18px 22px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: -0.2px;
+            user-select: none;
+            transition: var(--transition);
+        }
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .faq-question .arrow {
+            width: 20px;
+            height: 20px;
+            transition: var(--transition);
+            flex-shrink: 0;
+            margin-left: 12px;
+            position: relative;
+        }
+        .faq-question .arrow::before,
+        .faq-question .arrow::after {
+            content: '';
+            position: absolute;
+            background: var(--text2);
+            transition: var(--transition);
+        }
+        .faq-question .arrow::before {
+            width: 10px;
+            height: 2px;
+            top: 9px;
+            left: 5px;
+        }
+        .faq-question .arrow::after {
+            width: 2px;
+            height: 10px;
+            top: 5px;
+            left: 9px;
+        }
+        .faq-item.active .arrow::after {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 22px;
+            color: var(--text2);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 22px 18px;
+        }
+        .newsletter-section {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .newsletter-section h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .newsletter-section p {
+            color: var(--text3);
+            margin-bottom: 24px;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 440px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .newsletter-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.04);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            transition: var(--transition);
+        }
+        .newsletter-form input:focus {
+            border-color: var(--primary);
+        }
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text2);
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .contact-link:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .contact-link svg {
+            width: 18px;
+            height: 18px;
+        }
+        footer {
+            background: rgba(8, 8, 22, 0.9);
+            border-top: 1px solid var(--border);
+            padding: 40px 0 24px;
+            margin-top: 40px;
+        }
+        footer .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+        }
+        footer h4 {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            letter-spacing: -0.2px;
+        }
+        footer a {
+            display: block;
+            color: var(--text3);
+            text-decoration: none;
+            font-size: 0.85rem;
+            padding: 4px 0;
+            transition: var(--transition);
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        .footer-bottom {
+            text-align: center;
+            color: var(--text3);
+            font-size: 0.8rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--primary2));
+            border: none;
+            cursor: pointer;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+            box-shadow: 0 6px 20px rgba(79, 110, 247, 0.4);
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .scroll-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(79, 110, 247, 0.55);
+        }
+        .scroll-top svg {
+            width: 20px;
+            height: 20px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2.5;
+        }
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-content p {
+                max-width: 100%;
+            }
+            .btn-group {
+                justify-content: center;
+            }
+            .hero-visual svg {
+                max-width: 350px;
+            }
+            .about-content {
+                column-count: 1;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 280px;
+                height: 100vh;
+                background: rgba(15, 15, 35, 0.97);
+                backdrop-filter: blur(25px);
+                -webkit-backdrop-filter: blur(25px);
+                flex-direction: column;
+                padding: 90px 30px 30px;
+                gap: 4px;
+                transition: var(--transition);
+                border-left: 1px solid var(--border);
+                z-index: 1000;
+            }
+            nav.open {
+                right: 0;
+            }
+            nav a {
+                font-size: 1rem;
+                padding: 12px 16px;
+                border-radius: 10px;
+                width: 100%;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .about-content {
+                padding: 24px;
+            }
+            .newsletter-section {
+                padding: 30px 20px;
+            }
+            .section {
+                padding: 50px 0;
+            }
+            .hero {
+                padding: 50px 0 40px;
+                min-height: auto;
+            }
+            footer .container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            .stat-card {
+                padding: 18px 12px;
+            }
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.85rem;
+            }
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            .hero-visual svg {
+                max-width: 250px;
+            }
+            footer .container {
+                grid-template-columns: 1fr;
+            }
+            .newsletter-form {
+                flex-direction: column;
+            }
+            .newsletter-form input {
+                min-width: auto;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo" aria-label="AI Learning Hub Home">AI Learning Hub</a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="mainNav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#guides">AI Guides</a>
+                <a href="#resources">Machine Learning</a>
+                <a href="#resources">LLMs</a>
+                <a href="#resources">Resources</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Artificial Intelligence Learning Center</h1>
+                    <p>Discover beginner-friendly AI tutorials, machine learning guides, ChatGPT resources, large language model explanations and practical AI learning materials.</p>
+                    <div class="btn-group">
+                        <a href="#guides" class="btn btn-primary">Explore Guides</a>
+                        <a href="#resources" class="btn btn-outline">Browse Resources</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <svg viewBox="0 0 400 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="200" cy="180" r="140" stroke="url(#grad1)" stroke-width="1.5" opacity="0.3"/>
+                        <circle cx="200" cy="180" r="100" stroke="url(#grad2)" stroke-width="1" opacity="0.4" stroke-dasharray="8 6"/>
+                        <circle cx="200" cy="180" r="55" fill="url(#grad3)" opacity="0.15"/>
+                        <defs>
+                            <radialGradient id="grad3"><stop offset="0%" stop-color="#4f6ef7"/><stop offset="100%" stop-color="#00d4ff"/></radialGradient>
+                            <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4f6ef7"/><stop offset="100%" stop-color="#00d4ff"/></linearGradient>
+                            <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6c5ce7"/><stop offset="100%" stop-color="#7b5cff"/></linearGradient>
+                        </defs>
+                        <circle cx="140" cy="130" r="6" fill="#00d4ff" opacity="0.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
+                        <circle cx="260" cy="150" r="5" fill="#7b5cff" opacity="0.8"><animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/></circle>
+                        <circle cx="200" cy="100" r="4" fill="#4f6ef7" opacity="0.7"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle>
+                        <circle cx="170" cy="230" r="5" fill="#00d4ff" opacity="0.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+                        <circle cx="240" cy="210" r="7" fill="#6c5ce7" opacity="0.6"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.2s" repeatCount="indefinite"/></circle>
+                        <line x1="140" y1="130" x2="200" y2="100" stroke="#4f6ef7" stroke-width="0.8" opacity="0.35"/>
+                        <line x1="200" y1="100" x2="260" y2="150" stroke="#6c5ce7" stroke-width="0.8" opacity="0.35"/>
+                        <line x1="140" y1="130" x2="170" y2="230" stroke="#00d4ff" stroke-width="0.8" opacity="0.3"/>
+                        <line x1="260" y1="150" x2="240" y2="210" stroke="#7b5cff" stroke-width="0.8" opacity="0.3"/>
+                        <line x1="170" y1="230" x2="240" y2="210" stroke="#4f6ef7" stroke-width="0.8" opacity="0.3"/>
+                        <rect x="175" y="165" width="50" height="30" rx="8" fill="none" stroke="#fff" stroke-width="2" opacity="0.5"/>
+                        <text x="200" y="186" text-anchor="middle" fill="#fff" font-size="13" font-weight="700" font-family="Inter,sans-serif" opacity="0.8">AI</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="stats-section" aria-label="Statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-number">21+</div><div class="stat-label">AI Guides</div></div>
+                    <div class="stat-card"><div class="stat-number">100%</div><div class="stat-label">Free Resources</div></div>
+                    <div class="stat-card"><div class="stat-number">2026</div><div class="stat-label">Updated</div></div>
+                    <div class="stat-card"><div class="stat-number">24/7</div><div class="stat-label">Available</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about" aria-labelledby="aboutTitle">
+            <div class="container">
+                <h2 class="section-title" id="aboutTitle">About Artificial Intelligence</h2>
+                <p class="section-subtitle">Understanding the fundamentals of AI and its transformative impact on our world</p>
+                <div class="about-content">
+                    <h3>What Is Artificial Intelligence?</h3>
+                    <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think, learn, and make decisions. These systems can perform tasks that typically require human cognition, such as visual perception, speech recognition, decision-making, and language translation. Modern AI encompasses a broad spectrum of technologies, from simple rule-based algorithms to advanced neural networks capable of creative problem-solving. The field has evolved dramatically since its inception in the 1950s, with recent breakthroughs in deep learning and large language models revolutionizing how we interact with technology.</p>
+                    <h3>Why AI Matters</h3>
+                    <p>AI is reshaping every aspect of our lives, from how we work and communicate to how we access information and make decisions. The technology drives efficiency, unlocks new capabilities, and democratizes access to expertise. For businesses, AI enables automation of routine tasks, predictive analytics for better decision-making, and personalized customer experiences at scale. In healthcare, AI assists in diagnosing diseases and discovering new treatments. In education, it provides personalized learning pathways. The global AI market is projected to reach over $1.8 trillion by 2030, underscoring its immense economic significance.</p>
+                    <h3>How Businesses Use AI</h3>
+                    <p>Organizations across industries leverage AI to gain competitive advantages. E-commerce platforms use AI for product recommendations and inventory management. Financial institutions deploy AI for fraud detection and algorithmic trading. Manufacturing companies implement AI-powered predictive maintenance to reduce downtime. Marketing teams utilize generative AI for content creation and customer segmentation. AI-powered chatbots and virtual assistants handle customer support inquiries, reducing response times while improving satisfaction. The versatility of AI makes it applicable to virtually every business function.</p>
+                    <h3>Machine Learning</h3>
+                    <p>Machine Learning (ML) is a subset of AI that enables systems to learn from data without being explicitly programmed. ML algorithms identify patterns in large datasets and use these patterns to make predictions or decisions. Supervised learning uses labeled data to train models, while unsupervised learning finds hidden structures in unlabeled data. Reinforcement learning allows agents to learn through trial and error. ML powers recommendation engines, image recognition systems, and predictive analytics tools used daily by millions worldwide.</p>
+                    <h3>Deep Learning</h3>
+                    <p>Deep Learning is a specialized branch of machine learning that uses multi-layered neural networks to model complex patterns. Inspired by the human brain's architecture, deep learning models excel at processing unstructured data like images, audio, and text. Convolutional Neural Networks (CNNs) revolutionized computer vision, while Recurrent Neural Networks (RNNs) and Transformers transformed natural language processing. Deep learning underlies many breakthrough AI applications, including autonomous vehicles, voice assistants, and advanced medical imaging analysis.</p>
+                    <h3>Generative AI</h3>
+                    <p>Generative AI represents a paradigm shift in artificial intelligence, enabling machines to create new content rather than simply analyzing existing data. These models can generate text, images, music, code, and even video from natural language prompts. Technologies like Generative Adversarial Networks (GANs) and diffusion models power image generation tools, while transformer-based architectures enable sophisticated text generation. Generative AI is transforming creative industries, software development, and content production at an unprecedented pace.</p>
+                    <h3>Large Language Models (LLMs)</h3>
+                    <p>LLMs are advanced AI systems trained on massive text corpora to understand and generate human-like language. Models like GPT-4, Claude, and Gemini demonstrate remarkable capabilities in reasoning, translation, summarization, and creative writing. These models use transformer architectures with billions of parameters, enabling them to capture nuanced linguistic patterns and contextual understanding. LLMs power chatbots, coding assistants, and knowledge retrieval systems, fundamentally changing how humans interact with information technology.</p>
+                    <h3>The Future of AI</h3>
+                    <p>The future of AI promises even more transformative developments. Researchers are working toward Artificial General Intelligence (AGI) that can match or exceed human cognitive abilities across diverse tasks. Edge AI will bring intelligent processing to devices without cloud dependency. AI ethics and governance frameworks are evolving to ensure responsible development. The convergence of AI with quantum computing, robotics, and biotechnology will unlock possibilities we can barely imagine today. As AI continues to advance, staying informed and continuously learning will be essential for professionals in every field.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="guides" aria-labelledby="categoriesTitle">
+            <div class="container">
+                <h2 class="section-title" id="categoriesTitle">Featured Categories</h2>
+                <p class="section-subtitle">Explore our curated learning paths across key AI domains</p>
+                <div class="cards-grid">
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round"/></svg></div><h4>Artificial Intelligence</h4><p>Comprehensive guides covering AI fundamentals, history, and core concepts for beginners.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/></svg></div><h4>Machine Learning</h4><p>Hands-on tutorials on supervised, unsupervised, and reinforcement learning techniques.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h4>Large Language Models</h4><p>Deep dives into LLMs, transformers, and how models like GPT and Claude work.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>AI Business</h4><p>Learn how enterprises leverage AI for growth, efficiency, and competitive advantage.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h4>AI Productivity</h4><p>Boost your workflow with AI-powered tools, automation strategies, and smart assistants.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>AI Coding</h4><p>Master AI-assisted programming, code generation tools, and developer productivity hacks.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 10"/></svg></div><h4>AI Automation</h4><p>Build intelligent workflows and automate repetitive tasks with cutting-edge AI solutions.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h4>AI Research</h4><p>Stay updated with the latest AI research papers, breakthroughs, and academic insights.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="resources" aria-labelledby="resourcesTitle">
+            <div class="container">
+                <h2 class="section-title" id="resourcesTitle">Resource Library</h2>
+                <p class="section-subtitle">Browse our extensive collection of free AI guides and tutorials</p>
+                <div class="search-bar">
+                    <input type="text" id="resourceSearch" placeholder="Search resources by title or description..." aria-label="Search AI resources">
+                </div>
+                <div class="resources-grid" id="resourcesGrid">
+                    <div class="resource-card" data-title="What Is Artificial Intelligence?" data-desc="Comprehensive introduction to AI fundamentals"><h4>What Is Artificial Intelligence?</h4><p>A comprehensive introduction to AI fundamentals, history, and core concepts for absolute beginners.</p><a href="https://rcnguide.com/what-is-artificial-intelligence/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Types of Artificial Intelligence Explained" data-desc="Overview of different AI types and categories"><h4>Types of Artificial Intelligence Explained</h4><p>Explore the different categories of AI, from narrow AI to general intelligence and beyond.</p><a href="https://rcnguide.com/types-of-artificial-intelligence/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="What Is Machine Learning? A Beginner's Guide" data-desc="Beginner-friendly machine learning tutorial"><h4>What Is Machine Learning? A Beginner's Guide</h4><p>Start your ML journey with this easy-to-follow guide covering all essential concepts.</p><a href="https://rcnguide.com/what-is-machine-learning/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Complete ChatGPT Guide" data-desc="Master ChatGPT with this comprehensive guide"><h4>Complete ChatGPT Guide</h4><p>Learn everything about ChatGPT, from basic usage to advanced prompting techniques.</p><a href="https://rcnguide.com/chatgpt/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="ChatGPT Guide for Beginners" data-desc="Simple ChatGPT tutorial for newcomers"><h4>ChatGPT Guide for Beginners</h4><p>A step-by-step introduction to using ChatGPT effectively for everyday tasks and learning.</p><a href="https://rcnguide.com/chatgpt-guide-beginners/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Claude AI Master Guide" data-desc="Complete Claude AI tutorial and reference"><h4>Claude AI Master Guide</h4><p>Discover Anthropic's Claude AI with tips, best practices, and advanced use cases.</p><a href="https://rcnguide.com/claude-ai-master-guide/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Kimi AI: Complete Guide" data-desc="Everything about Kimi AI assistant"><h4>Kimi AI: Complete Guide</h4><p>Explore Kimi AI's features, capabilities, and how to use it for maximum productivity.</p><a href="https://rcnguide.com/kimi-ai/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Complete RAG Guide" data-desc="Retrieval-Augmented Generation explained"><h4>Complete RAG Guide</h4><p>Understand Retrieval-Augmented Generation and how it enhances AI accuracy and reliability.</p><a href="https://rcnguide.com/complete-rag-guide/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Manus AI: What It Is and How It Works" data-desc="Deep dive into Manus AI technology"><h4>Manus AI: What It Is and How It Works</h4><p>Learn about Manus AI, its architecture, applications, and what makes it unique.</p><a href="https://rcnguide.com/manus-ai-what-it-is-how-it-works/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Meituan LongCat AI Explained" data-desc="Overview of Meituan's LongCat AI"><h4>Meituan LongCat AI Explained</h4><p>Discover Meituan's LongCat AI and its role in the evolving AI landscape.</p><a href="https://rcnguide.com/meituan-longcat-ai/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Narrow AI vs AGI vs Superintelligence" data-desc="Compare different AI capability levels"><h4>Narrow AI vs AGI vs Superintelligence</h4><p>Understand the key differences between AI capability levels and what the future holds.</p><a href="https://rcnguide.com/narrow-ai-vs-agi-vs-superintelligence/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Siri AI: How Apple's Virtual Assistant Works" data-desc="Technical overview of Siri AI"><h4>Siri AI: How Apple's Virtual Assistant Works</h4><p>Explore the technology behind Siri and how Apple integrates AI into its ecosystem.</p><a href="https://rcnguide.com/siri-ai/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="Xiaomi MiMo Code Review" data-desc="Review of Xiaomi's MiMo coding AI"><h4>Xiaomi MiMo Code Review</h4><p>An in-depth look at Xiaomi's MiMo code assistant and its development capabilities.</p><a href="https://rcnguide.com/xiaomi-mimo-code-review/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="How AI Builds Business Credibility and Trust" data-desc="AI for business reputation management"><h4>How AI Builds Business Credibility and Trust</h4><p>Learn how AI tools help businesses establish credibility and build customer trust.</p><a href="https://rcnguide.com/how-ai-builds-business-credibility-and-trust/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="AI Leadership: Transforming Decision-Making" data-desc="AI in executive leadership"><h4>AI Leadership: Transforming Decision-Making</h4><p>Discover how artificial intelligence is reshaping leadership and strategic decisions.</p><a href="https://rcnguide.com/ai-leadership/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="AI Customer Support: Benefits and Best Practices" data-desc="AI-powered customer service guide"><h4>AI Customer Support: Benefits & Best Practices</h4><p>Explore how AI transforms customer support with chatbots, automation, and analytics.</p><a href="https://rcnguide.com/ai-customer-support/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="AI Logistics for E-commerce" data-desc="AI applications in logistics"><h4>AI Logistics for E-commerce</h4><p>See how AI optimizes supply chains, inventory, and delivery for e-commerce businesses.</p><a href="https://rcnguide.com/ai-logistics-for-e-commerce/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="AI-Powered Beauty Technology" data-desc="AI in the beauty industry"><h4>AI-Powered Beauty Technology</h4><p>Explore how AI is revolutionizing the beauty industry with personalized recommendations.</p><a href="https://rcnguide.com/ai-powered-beauty-technology/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="How AI Is Changing $4 Deposit Casinos in NZ" data-desc="AI in online gaming"><h4>How AI Is Changing $4 Deposit Casinos in NZ</h4><p>Discover how AI technology is transforming the online casino experience in New Zealand.</p><a href="https://rcnguide.com/ai-is-changing-4-deposit-real-money-casinos/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="How AI Is Transforming Football Talent Scouting" data-desc="AI in sports analytics"><h4>How AI Is Transforming Football Talent Scouting</h4><p>Learn how AI and data analytics are revolutionizing football talent identification.</p><a href="https://rcnguide.com/jonathan-david/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                    <div class="resource-card" data-title="15 Best AI Tools for Video Editing (2026)" data-desc="Top AI video editing tools compared"><h4>15 Best AI Tools for Video Editing Compared (2026)</h4><p>Compare the top AI-powered video editing tools and find the perfect one for your needs.</p><a href="https://rcnguide.com/15-ai-video-editors-compared/" class="btn btn-outline" target="_blank" rel="noopener">Read Guide</a></div>
+                </div>
+                <div class="no-results" id="noResults" style="display:none;">No resources found. Try a different search term.</div>
+            </div>
+        </section>
+        <section class="section" aria-labelledby="roadmapTitle">
+            <div class="container">
+                <h2 class="section-title" id="roadmapTitle">Learning Roadmap</h2>
+                <p class="section-subtitle">Follow this structured path from beginner to AI expert</p>
+                <div class="timeline">
+                    <div class="timeline-item"><h4>🌱 Beginner</h4><p>Start with AI fundamentals, basic terminology, and understand what AI can and cannot do. Explore introductory guides and build conceptual knowledge.</p></div>
+                    <div class="timeline-item"><h4>📚 Intermediate</h4><p>Dive into machine learning algorithms, work with Python and popular ML libraries. Complete hands-on projects and understand model evaluation.</p></div>
+                    <div class="timeline-item"><h4>🚀 Advanced</h4><p>Master deep learning, neural network architectures, and transformer models. Build and deploy real-world AI applications with production-ready code.</p></div>
+                    <div class="timeline-item"><h4>🏆 Expert</h4><p>Contribute to AI research, optimize large-scale models, design novel architectures, and lead AI strategy for organizations. Stay at the cutting edge.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" aria-labelledby="benefitsTitle">
+            <div class="container">
+                <h2 class="section-title" id="benefitsTitle">Benefits of Learning AI</h2>
+                <p class="section-subtitle">Why investing in AI knowledge pays dividends for your career and future</p>
+                <div class="benefits-grid cards-grid">
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h4>Career Growth</h4><p>AI skills are among the most in-demand, with salaries for AI roles growing rapidly across industries worldwide.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 10"/></svg></div><h4>Automation</h4><p>Learn to automate repetitive tasks and free up time for creative, high-value work that truly matters.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div><h4>Business</h4><p>Drive business innovation with AI-powered insights, predictive analytics, and intelligent decision-making tools.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>Coding</h4><p>Supercharge your development workflow with AI coding assistants, code generation, and intelligent debugging.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div><h4>Research</h4><p>Contribute to cutting-edge AI research and help shape the future of intelligent technology.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><h4>Content Creation</h4><p>Harness generative AI to create compelling content, from writing to images, video, and beyond.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 4 6 4s6-2 6-4v-5"/></svg></div><h4>Education</h4><p>Transform learning experiences with AI tutors, personalized curricula, and intelligent educational tools.</p></div>
+                    <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M2 12h20"/></svg></div><h4>Innovation</h4><p>Be at the forefront of technological innovation and help solve humanity's biggest challenges with AI.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="faq" aria-labelledby="faqTitle">
+            <div class="container">
+                <h2 class="section-title" id="faqTitle">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find answers to common questions about AI and our learning resources</p>
+                <div class="faq-list" id="faqList">
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is artificial intelligence?<span class="arrow"></span></div><div class="faq-answer"><p>Artificial Intelligence (AI) is the simulation of human intelligence by machines, enabling them to learn from experience, adjust to new inputs, and perform human-like tasks such as reasoning, problem-solving, and language understanding.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">How do I start learning AI as a complete beginner?<span class="arrow"></span></div><div class="faq-answer"><p>Begin with understanding basic AI concepts, then explore our beginner guides. Familiarize yourself with Python programming, basic statistics, and gradually move into machine learning fundamentals. Our resource library provides curated, step-by-step pathways for newcomers.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What are Large Language Models (LLMs)?<span class="arrow"></span></div><div class="faq-answer"><p>LLMs are advanced AI models trained on massive amounts of text data. They use transformer architectures to understand context, generate coherent text, answer questions, and perform complex language tasks. Examples include GPT-4, Claude, and Gemini.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">Is AI difficult to learn?<span class="arrow"></span></div><div class="faq-answer"><p>AI has a learning curve, but it's accessible to anyone willing to invest time. Beginners can start with conceptual understanding before diving into technical details. Our structured roadmap helps you progress at your own pace from fundamentals to advanced topics.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What careers can I pursue with AI skills?<span class="arrow"></span></div><div class="faq-answer"><p>AI skills open doors to roles like Machine Learning Engineer, Data Scientist, AI Researcher, NLP Engineer, Computer Vision Specialist, AI Product Manager, and AI Ethics Consultant. Demand for AI talent continues to grow across all sectors.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is the difference between AI and machine learning?<span class="arrow"></span></div><div class="faq-answer"><p>Artificial Intelligence is the broader concept of machines performing tasks intelligently. Machine Learning is a subset of AI where systems learn from data without being explicitly programmed. All ML is AI, but not all AI uses ML.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">Are all resources on AI Learning Hub really free?<span class="arrow"></span></div><div class="faq-answer"><p>Yes! Every guide, tutorial, and resource on AI Learning Hub is 100% free. We believe AI education should be accessible to everyone, regardless of their financial situation. No hidden fees or premium tiers.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is generative AI?<span class="arrow"></span></div><div class="faq-answer"><p>Generative AI refers to AI systems that can create new content—including text, images, music, code, and video—based on patterns learned from training data. Tools like ChatGPT, DALL-E, and Midjourney are popular examples of generative AI.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">How often are the guides updated?<span class="arrow"></span></div><div class="faq-answer"><p>Our guides are continuously updated to reflect the latest developments in AI. The field moves rapidly, and we ensure our content stays current with new model releases, research breakthroughs, and industry best practices.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">Do I need a technical background to learn AI?<span class="arrow"></span></div><div class="faq-answer"><p>Not necessarily. While technical skills help, many AI concepts can be understood conceptually. Our beginner resources are designed for non-technical learners. As you progress, some programming knowledge becomes beneficial for hands-on practice.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is the best AI tool for beginners?<span class="arrow"></span></div><div class="faq-answer"><p>ChatGPT is an excellent starting point for beginners. It's free, user-friendly, and helps you understand how AI can assist with writing, research, and problem-solving. Our ChatGPT guides will help you make the most of it.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">How is AI used in business today?<span class="arrow"></span></div><div class="faq-answer"><p>Businesses use AI for customer service automation, predictive analytics, fraud detection, personalized marketing, supply chain optimization, and much more. AI drives efficiency, reduces costs, and enables data-driven decision-making.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is RAG in AI?<span class="arrow"></span></div><div class="faq-answer"><p>Retrieval-Augmented Generation (RAG) combines information retrieval with text generation. It allows AI models to access external knowledge bases, improving accuracy and reducing hallucinations by grounding responses in verified sources.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">Will AI replace human jobs?<span class="arrow"></span></div><div class="faq-answer"><p>AI will transform jobs rather than simply replace them. While some routine tasks may be automated, AI also creates new roles and augments human capabilities. Learning AI skills now positions you to thrive in the evolving job market.</p></div></div>
+                    <div class="faq-item"><div class="faq-question" tabindex="0" role="button" aria-expanded="false">How can I stay updated with AI developments?<span class="arrow"></span></div><div class="faq-answer"><p>Follow our regularly updated resource library, subscribe to our newsletter, and explore our curated guides. We track the latest AI trends, tools, and research so you don't have to.</p></div></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" aria-labelledby="newsletterTitle">
+            <div class="container">
+                <div class="newsletter-section">
+                    <h3 id="newsletterTitle">Stay Ahead with AI</h3>
+                    <p>Get the latest AI guides, tutorials, and insights delivered to your inbox. No spam, just valuable learning resources.</p>
+                    <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter subscription">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact" aria-labelledby="contactTitle">
+            <div class="container">
+                <h2 class="section-title" id="contactTitle">Get in Touch</h2>
+                <p class="section-subtitle">Connect with us for questions, collaborations, or feedback</p>
+                <div class="contact-links">
+                    <a href="#" class="contact-link" aria-label="Email us">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg> Email
+                    </a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg> GitHub
+                    </a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M8 14v6M16 14v6M12 10v10"/></svg> LinkedIn
+                    </a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg> Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer aria-label="Site footer">
+        <div class="container">
+            <div>
+                <h4>AI Learning Hub</h4>
+                <p style="color:var(--text3);font-size:0.85rem;">Your trusted source for free AI education, tutorials, and resources. Empowering learners worldwide.</p>
+            </div>
+            <div>
+                <h4>Useful Links</h4>
+                <a href="#home">Home</a><a href="#guides">AI Guides</a><a href="#resources">Resources</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#resources">Machine Learning</a><a href="#resources">LLMs</a><a href="#resources">ChatGPT</a><a href="#resources">AI Business</a><a href="#resources">AI Coding</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">Disclaimer</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 AI Learning Hub. All rights reserved. Made with ❤️ for the AI community.</p>
+        </div>
+    </footer>
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <script>
+        (function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.getElementById('mainNav');
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            const resourceSearch = document.getElementById('resourceSearch');
+            const resourcesGrid = document.getElementById('resourcesGrid');
+            const noResults = document.getElementById('noResults');
+            const faqList = document.getElementById('faqList');
+            const newsletterForm = document.getElementById('newsletterForm');
+            const allResourceCards = resourcesGrid.querySelectorAll('.resource-card');
+            hamburger.addEventListener('click', function() {
+                const isOpen = nav.classList.toggle('open');
+                hamburger.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            nav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+            document.addEventListener('click', function(e) {
+                if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains(
+                        'open')) {
+                    nav.classList.remove('open');
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            });
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 400) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            }, { passive: true });
+            scrollTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            resourceSearch.addEventListener('input', function() {
+                const query = this.value.toLowerCase().trim();
+                let visibleCount = 0;
+                allResourceCards.forEach(card => {
+                    const title = (card.getAttribute('data-title') || '').toLowerCase();
+                    const desc = (card.getAttribute('data-desc') || '').toLowerCase();
+                    const cardText = title + ' ' + desc;
+                    if (!query || cardText.includes(query)) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            });
+            faqList.addEventListener('click', function(e) {
+                const question = e.target.closest('.faq-question');
+                if (!question) return;
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                faqList.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                }
+            });
+            faqList.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    const question = e.target.closest('.faq-question');
+                    if (question) {
+                        e.preventDefault();
+                        question.click();
+                    }
+                }
+            });
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[type="email"]');
+                const btn = this.querySelector('button');
+                const originalText = btn.textContent;
+                btn.textContent = 'Subscribed!';
+                btn.style.background = 'linear-gradient(135deg, #00d4ff, #4f6ef7)';
+                emailInput.value = '';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                }, 2500);
+            });
+            const faqItems = faqList.querySelectorAll('.faq-item');
+            if (faqItems.length > 0) {
+                faqItems[0].classList.add('active');
+                faqItems[0].querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+            }
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            if ('loading' in HTMLImageElement.prototype) {
+                lazyImages.forEach(img => { img.src = img.dataset.src || img.src; });
+            }
+        })();
+    </script>
+</body>
+</html>
